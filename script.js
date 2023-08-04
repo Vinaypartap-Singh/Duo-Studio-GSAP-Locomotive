@@ -19,10 +19,17 @@ mainSection.addEventListener("mousemove", function (details) {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
+let locoScroll;
+locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
+  smartphone: {
+    smooth: true,
+  },
 });
+new ResizeObserver(() => locoScroll.update()).observe(
+  document.querySelector("#main")
+);
 
 locoScroll.on("scroll", ScrollTrigger.update);
 
