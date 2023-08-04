@@ -5,12 +5,15 @@
   font-family: "Suisse Int'l";
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  /* background-color: black;
-  color: black; */
+#cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #edbfff;
+  position: fixed;
+  transition: all ease-in-out;
+  z-index: 10;
+  mix-blend-mode: difference;
 }
 
 #main {
@@ -216,7 +219,7 @@ body {
   font-size: 1.5vw;
 }
 
-#workVideo2 {
+#workImage2 {
   margin-top: -23%;
 }
 

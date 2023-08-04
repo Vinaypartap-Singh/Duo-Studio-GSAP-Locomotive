@@ -9,6 +9,14 @@
 //   );
 // })();
 
+var crsur = document.querySelector("#cursor");
+var mainSection = document.querySelector("#main");
+
+mainSection.addEventListener("mousemove", function (details) {
+  crsur.style.top = details.y + "px";
+  crsur.style.left = details.x + "px";
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
