@@ -40,3 +40,50 @@ ScrollTrigger.scrollerProxy("#main", {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
+
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page1Heading1",
+    scroller: "#main",
+    start: "top 20%",
+    end: "top 0",
+    scrub: 2,
+  },
+});
+
+tl.to(
+  "#page1Heading1",
+  {
+    x: -120,
+    filter: "blur(10px)",
+  },
+  "heroAnim"
+);
+
+tl.to(
+  "#page2Heading2",
+  {
+    x: 120,
+    filter: "blur(10px)",
+  },
+  "heroAnim"
+);
+
+tl.to(
+  "#page1Content p",
+  {
+    x: 10,
+    filter: "blur(10px)",
+  },
+  "heroAnim"
+);
+
+tl.to(
+  "#videoContainer video",
+  {
+    width: "90%",
+    marginTop: "-700px",
+    zIndex: 11,
+  },
+  "heroAnim"
+);
