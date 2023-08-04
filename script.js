@@ -81,9 +81,29 @@ tl.to(
 tl.to(
   "#videoContainer video",
   {
-    width: "90%",
+    width: "80%",
+    duration: 2,
     marginTop: "-700px",
     zIndex: 11,
   },
   "heroAnim"
 );
+
+var timeline2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page1Heading1",
+    scroller: "#main",
+    duration: 3,
+    start: "top -20%",
+    scrub: 2,
+  },
+});
+
+timeline2.to("#main", {
+  backgroundColor: "white",
+  color: "black",
+});
+
+timeline2.to(".page2-info, .page2-info-last", {
+  borderColor: "black",
+});

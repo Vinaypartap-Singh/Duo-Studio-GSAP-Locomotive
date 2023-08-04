@@ -9,14 +9,17 @@ html,
 body {
   height: 100%;
   width: 100%;
+  /* background-color: black;
+  color: black; */
 }
 
 #main {
   background-color: #0f0d0d;
+  color: white;
 }
 
 #page1 {
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100%;
   color: white;
 }
@@ -53,6 +56,7 @@ body {
 #page1Content {
   text-align: center;
   margin-top: 20vh !important;
+  padding-bottom: 5vh;
 }
 
 #page1Content h1 {
@@ -68,6 +72,79 @@ body {
 
 #videoContainer {
   margin-top: 20vh;
+  padding-bottom: 10vh;
   display: flex;
   justify-content: center;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+  border-bottom: 1px solid;
+}
+
+#innerContent2 {
+  padding-left: 10vw;
+}
+
+#upper2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 74%;
+  font-size: 2vw;
+}
+
+#upper2 h2 span {
+  font-size: 18px;
+}
+
+#page2Info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#page2Right-content {
+  width: 55%;
+}
+
+#page2Right-content img {
+  width: 85%;
+}
+
+#page2Left-content {
+  width: 35%;
+}
+
+.page2-info {
+  border-top: 1px solid white;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.page2-info-last {
+  border-top: 1px solid white;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid;
+}
+
+.page2-info h3 {
+  font-size: 1.5vw;
+}
+
+.page2-info p {
+  max-width: 32rem;
+  margin-top: 0.7vh;
+}
+
+.page2-info-last h3 {
+  font-size: 1.5vw;
+}
+
+.page2-info-last p {
+  max-width: 32rem;
+  margin-top: 0.7vh;
 }
