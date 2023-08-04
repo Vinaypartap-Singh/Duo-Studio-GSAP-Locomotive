@@ -148,3 +148,14 @@ body {
   max-width: 32rem;
   margin-top: 0.7vh;
 }
+
+#page3 {
+  padding: 10vh 0;
+  min-height: 100vh;
+}
+
+#page3 h2:nth-child(1) {
+  font-size: 6vw;
+  font-weight: 400;
+  padding-left: 10vw;
+}
