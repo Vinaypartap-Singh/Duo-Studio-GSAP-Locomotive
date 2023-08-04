@@ -56,6 +56,49 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
 
+const heroText = new SplitType("#page1Content h1");
+const featuredText = new SplitType("#featuredText");
+
+gsap.to("#page1Heading1 .char, #page2Heading2 .char", {
+  y: -30,
+  stagger: 0.05,
+  duration: 1,
+  delay: 0.2,
+});
+
+const timelineNew = gsap.timeline();
+
+timelineNew.to("#featuredText .line", {
+  y: -60,
+  stagger: 0.05,
+  duration: 3,
+  scrollTrigger: {
+    trigger: "#featuredText .char",
+    scroller: "#main",
+    scrub: 2,
+  },
+});
+
+timelineNew.to("#workVideo, #workImage", {
+  y: -160,
+  duration: 3,
+  scrollTrigger: {
+    trigger: "#workImage, #workVideo",
+    scroller: "#main",
+    scrub: 2,
+  },
+});
+
+timelineNew.to("#workVideo2, #workImage2", {
+  y: -160,
+  duration: 3,
+  scrollTrigger: {
+    trigger: "#workImage2, #workVideo2",
+    scroller: "#main",
+    scrub: 2,
+  },
+});
+
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: "#page1Heading1",
