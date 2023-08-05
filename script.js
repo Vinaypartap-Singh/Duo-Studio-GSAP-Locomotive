@@ -101,7 +101,7 @@ var tl = gsap.timeline({
 tl.to(
   "#page1Heading1",
   {
-    x: -120,
+    x: -160,
     filter: "blur(10px)",
   },
   "heroAnim"
@@ -110,7 +110,7 @@ tl.to(
 tl.to(
   "#page2Heading2",
   {
-    x: 120,
+    x: 160,
     filter: "blur(10px)",
   },
   "heroAnim"
@@ -155,13 +155,14 @@ timeline2.to(".page2-info, .page2-info-last", {
   borderColor: "black",
 });
 
-const tl4 = gsap.timline({
+const tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: "#page1 h1",
     scroller: "#main",
-    start: "top -200%",
+    start: "top -365%",
     end: "top -210%",
     scrub: 3,
+    markers: true,
   },
 });
 
