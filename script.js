@@ -1,14 +1,3 @@
-// (function () {
-//   const scroll = new LocomotiveScroll({
-//     el: document.querySelector("#main"),
-//     smooth: true,
-//     smoothMobile: false,
-//   });
-//   new ResizeObserver(() => scroll.update()).observe(
-//     document.querySelector("#main")
-//   );
-// })();
-
 var crsur = document.querySelector("#cursor");
 var mainSection = document.querySelector("#main");
 
@@ -164,4 +153,19 @@ timeline2.to("#main", {
 
 timeline2.to(".page2-info, .page2-info-last", {
   borderColor: "black",
+});
+
+const tl4 = gsap.timline({
+  scrollTrigger: {
+    trigger: "#page1 h1",
+    scroller: "#main",
+    start: "top -200%",
+    end: "top -210%",
+    scrub: 3,
+  },
+});
+
+tl4.to("#main", {
+  backgroundColor: "#0F0D0D",
+  color: "white",
 });
