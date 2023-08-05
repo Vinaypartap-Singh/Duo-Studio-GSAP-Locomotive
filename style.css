@@ -10,6 +10,26 @@ body {
   cursor: none;
 }
 
+.purple {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #edbfff;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#marquee1 {
+  display: flex;
+}
+
+#marquee1 span {
+  font-size: 8vw;
+  margin: 10px;
+}
+
 #cursor {
   width: 40px;
   height: 40px;
@@ -37,6 +57,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
+  z-index: 100;
 }
 
 #navLinks {
