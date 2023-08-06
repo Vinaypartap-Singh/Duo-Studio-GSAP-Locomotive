@@ -162,7 +162,6 @@ const tl4 = gsap.timeline({
     start: "top -365%",
     end: "top -210%",
     scrub: 3,
-    markers: true,
   },
 });
 
