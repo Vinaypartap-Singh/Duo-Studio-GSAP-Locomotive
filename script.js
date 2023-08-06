@@ -187,3 +187,17 @@ ntl.to("#page5 h1", {
 });
 
 // Mouse Hover Cursor Size Change
+
+var crsr300 = document.querySelector(".cursor300");
+
+crsr300.addEventListener("mousemove", function () {
+  var originalCursor = document.getElementById("cursor");
+  originalCursor.style.width = "150px";
+  originalCursor.style.height = "150px";
+});
+
+crsr300.addEventListener("mouseleave", function () {
+  var originalCursor = document.getElementById("cursor");
+  originalCursor.style.width = "40px";
+  originalCursor.style.height = "40px";
+});
