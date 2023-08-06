@@ -169,3 +169,22 @@ tl4.to("#main", {
   backgroundColor: "#0F0D0D",
   color: "white",
 });
+
+const ntl = gsap.timeline();
+
+ntl.to("#page5 h1", {
+  transform: "translateX(-70%)",
+  duration: 2,
+  pin: true,
+  scrollTrigger: {
+    trigger: "#page5",
+    scroller: "#main",
+    markers: true,
+    start: "top 45%",
+    end: "top -220%",
+    scrub: 2,
+    pin: true,
+  },
+});
+
+// Mouse Hover Cursor Size Change

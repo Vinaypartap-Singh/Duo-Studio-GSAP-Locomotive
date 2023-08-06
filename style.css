@@ -321,7 +321,11 @@ body {
 
 #page5 h1 {
   font-size: 18vw;
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin-left: 8vw;
   opacity: 0.5;
+}
+
+#dummyPage {
+  height: 100vh;
 }
