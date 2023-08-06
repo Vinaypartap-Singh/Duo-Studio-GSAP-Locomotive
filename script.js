@@ -179,7 +179,6 @@ ntl.to("#page5 h1", {
   scrollTrigger: {
     trigger: "#page5",
     scroller: "#main",
-    markers: true,
     start: "top 45%",
     end: "top -220%",
     scrub: 2,
